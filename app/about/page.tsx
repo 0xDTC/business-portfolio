@@ -190,12 +190,12 @@ export default function Example() {
 							<span className="sr-only">Your Company</span>
 							<img
 								alt=""
-								src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+								src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=900"
 								className="h-8 w-auto dark:hidden"
 							/>
 							<img
 								alt=""
-								src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+								src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=800"
 								className="h-8 w-auto not-dark:hidden"
 							/>
 						</a>
@@ -243,12 +243,12 @@ export default function Example() {
 								<span className="sr-only">Your Company</span>
 								<img
 									alt=""
-									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=900"
 									className="h-8 w-auto dark:hidden"
 								/>
 								<img
 									alt=""
-									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=800"
 									className="h-8 w-auto not-dark:hidden"
 								/>
 							</a>
@@ -290,10 +290,10 @@ export default function Example() {
 
 			<main className="isolate">
 				{/* Hero section */}
-				<div className="relative isolate -z-10 overflow-hidden bg-linear-to-b from-indigo-100/20 pt-14 dark:from-indigo-950/10">
+				<div className="relative isolate -z-10 overflow-hidden bg-linear-to-b from-blue-100/20 pt-14 dark:from-blue-950/10">
 					<div
 						aria-hidden="true"
-						className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl ring-1 shadow-indigo-600/10 ring-indigo-50 sm:-mr-80 lg:-mr-96 dark:bg-gray-800/30 dark:shadow-indigo-400/10 dark:ring-white/5"
+						className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl ring-1 shadow-blue-900/10 ring-blue-50 sm:-mr-80 lg:-mr-96 dark:bg-gray-800/30 dark:shadow-blue-700/10 dark:ring-white/5"
 					/>
 					<div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
 						<div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
@@ -326,7 +326,7 @@ export default function Example() {
 							<div key={item.name}>
 								<time
 									dateTime={item.dateTime}
-									className="flex items-center text-sm/6 font-semibold text-indigo-600 dark:text-indigo-400">
+									className="flex items-center text-sm/6 font-semibold text-blue-900 dark:text-blue-700">
 									<svg
 										viewBox="0 0 4 4"
 										aria-hidden="true"
@@ -513,7 +513,7 @@ export default function Example() {
 								</p>
 							</div>
 						</div>
-						<div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-indigo-600 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28 dark:inset-ring dark:inset-ring-white/10">
+						<div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-blue-900 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28 dark:inset-ring dark:inset-ring-white/10">
 							<p className="flex-none text-3xl font-bold tracking-tight text-white">
 								401,093
 							</p>
@@ -521,7 +521,7 @@ export default function Example() {
 								<p className="text-lg font-semibold tracking-tight text-white">
 									Transactions this year
 								</p>
-								<p className="mt-2 text-base/7 text-indigo-200 dark:text-indigo-100">
+								<p className="mt-2 text-base/7 text-blue-200 dark:text-blue-100">
 									Eu duis porta aliquam ornare. Elementum eget magna egestas. Eu
 									duis porta aliquam ornare.
 								</p>
@@ -595,7 +595,7 @@ export default function Example() {
 							<div className="mt-8 flex border-t border-gray-100 pt-8 dark:border-gray-800">
 								<a
 									href="#"
-									className="text-sm/6 font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300">
+									className="text-sm/6 font-semibold text-blue-900 hover:text-blue-800 dark:text-blue-700 dark:hover:text-blue-600">
 									View all openings <span aria-hidden="true">&rarr;</span>
 								</a>
 							</div>
@@ -707,12 +707,12 @@ export default function Example() {
 									required
 									placeholder="Enter your email"
 									autoComplete="email"
-									className="w-full min-w-0 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:w-64 sm:text-sm/6 xl:w-full dark:bg-white/5 dark:text-white dark:outline-gray-700 dark:focus:outline-indigo-500"
+									className="w-full min-w-0 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900 sm:w-64 sm:text-sm/6 xl:w-full dark:bg-white/5 dark:text-white dark:outline-gray-700 dark:focus:outline-blue-800"
 								/>
 								<div className="mt-4 sm:mt-0 sm:ml-4 sm:shrink-0">
 									<button
 										type="submit"
-										className="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">
+										className="flex w-full items-center justify-center rounded-md bg-blue-900 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-blue-800 dark:hover:bg-blue-700 dark:focus-visible:outline-blue-800">
 										Subscribe
 									</button>
 								</div>

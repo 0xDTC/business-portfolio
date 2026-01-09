@@ -29,12 +29,12 @@ export default function HeroSection() {
 								<span className="sr-only">Your Company</span>
 								<img
 									alt="Your Company"
-									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=900"
 									className="h-8 w-auto dark:hidden"
 								/>
 								<img
 									alt="Your Company"
-									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=800"
 									className="h-8 w-auto not-dark:hidden"
 								/>
 							</a>
@@ -74,12 +74,12 @@ export default function HeroSection() {
 								<span className="sr-only">Your Company</span>
 								<img
 									alt=""
-									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=900"
 									className="h-8 w-auto dark:hidden"
 								/>
 								<img
 									alt=""
-									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+									src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=800"
 									className="h-8 w-auto not-dark:hidden"
 								/>
 							</a>
@@ -137,7 +137,7 @@ export default function HeroSection() {
 										Anim aute id magna aliqua ad ad non deserunt sunt.{" "}
 										<a
 											href="#"
-											className="font-semibold whitespace-nowrap text-indigo-600 dark:text-indigo-400">
+											className="font-semibold whitespace-nowrap text-blue-900 dark:text-blue-700">
 											<span
 												aria-hidden="true"
 												className="absolute inset-0"
@@ -157,7 +157,7 @@ export default function HeroSection() {
 								<div className="mt-10 flex items-center gap-x-6">
 									<a
 										href="#"
-										className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">
+										className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-blue-800 dark:hover:bg-blue-700 dark:focus-visible:outline-blue-800">
 										Get started
 									</a>
 									<a

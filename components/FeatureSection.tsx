@@ -44,7 +44,7 @@ export default function FeatureSection() {
 								key={feature.name}
 								className="flex flex-col">
 								<dt className="text-base/7 font-semibold text-gray-900 dark:text-white">
-									<div className="mb-6 flex size-10 items-center justify-center rounded-lg bg-indigo-600 dark:bg-indigo-500">
+									<div className="mb-6 flex size-10 items-center justify-center rounded-lg bg-blue-900 dark:bg-blue-800">
 										<feature.icon
 											aria-hidden="true"
 											className="size-6 text-white"
@@ -57,7 +57,7 @@ export default function FeatureSection() {
 									<p className="mt-6">
 										<a
 											href={feature.href}
-											className="text-sm/6 font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300">
+											className="text-sm/6 font-semibold text-blue-900 hover:text-blue-800 dark:text-blue-700 dark:hover:text-blue-600">
 											Learn more <span aria-hidden="true">→</span>
 										</a>
 									</p>

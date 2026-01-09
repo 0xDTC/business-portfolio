@@ -38,7 +38,7 @@ export default function TimelineSection() {
 						<div key={item.name}>
 							<time
 								dateTime={item.dateTime}
-								className="flex items-center text-sm/6 font-semibold text-indigo-600 dark:text-indigo-400">
+								className="flex items-center text-sm/6 font-semibold text-blue-900 dark:text-blue-700">
 								<svg
 									viewBox="0 0 4 4"
 									aria-hidden="true"
