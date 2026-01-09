@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function ContactSection() {
 	return (
 		<div className="relative bg-white dark:bg-gray-900">
