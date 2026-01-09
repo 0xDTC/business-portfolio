@@ -1,4 +1,6 @@
 "use client";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/Footer";
 
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
@@ -178,6 +180,7 @@ export default function Example() {
 
 	return (
 		<div className="bg-white dark:bg-gray-900">
+			<Header />
 			{/* Header */}
 			<header className="absolute inset-x-0 top-0 z-50">
 				<nav
@@ -199,7 +202,8 @@ export default function Example() {
 								className="h-8 w-auto not-dark:hidden"
 							/>
 						</a>
-					</div>
+								<Footer />
+		</div>
 					<div className="flex lg:hidden">
 						<button
 							type="button"
@@ -211,7 +215,8 @@ export default function Example() {
 								className="size-6"
 							/>
 						</button>
-					</div>
+								<Footer />
+		</div>
 					<div className="hidden lg:flex lg:gap-x-12">
 						{navigation.map((item) => (
 							<a
@@ -221,14 +226,16 @@ export default function Example() {
 								{item.name}
 							</a>
 						))}
-					</div>
+								<Footer />
+		</div>
 					<div className="hidden lg:flex lg:flex-1 lg:justify-end">
 						<a
 							href="#"
 							className="text-sm/6 font-semibold text-gray-900 dark:text-white">
 							Log in <span aria-hidden="true">&rarr;</span>
 						</a>
-					</div>
+								<Footer />
+		</div>
 				</nav>
 				<Dialog
 					open={mobileMenuOpen}
@@ -262,7 +269,8 @@ export default function Example() {
 									className="size-6"
 								/>
 							</button>
-						</div>
+									<Footer />
+		</div>
 						<div className="mt-6 flow-root">
 							<div className="-my-6 divide-y divide-gray-500/10 dark:divide-white/10">
 								<div className="space-y-2 py-6">
@@ -274,16 +282,20 @@ export default function Example() {
 											{item.name}
 										</a>
 									))}
-								</div>
+											<Footer />
+		</div>
 								<div className="py-6">
 									<a
 										href="#"
 										className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">
 										Log in
 									</a>
-								</div>
-							</div>
-						</div>
+											<Footer />
+		</div>
+										<Footer />
+		</div>
+									<Footer />
+		</div>
 					</DialogPanel>
 				</Dialog>
 			</header>
@@ -308,16 +320,20 @@ export default function Example() {
 									occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non
 									deserunt sunt. Qui irure qui lorem cupidatat commodo.
 								</p>
-							</div>
+										<Footer />
+		</div>
 							<img
 								alt=""
 								src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
 								className="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5 sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 dark:outline-white/10"
 							/>
-						</div>
-					</div>
+									<Footer />
+		</div>
+								<Footer />
+		</div>
 					<div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-linear-to-t from-white sm:h-32 dark:from-gray-900" />
-				</div>
+							<Footer />
+		</div>
 
 				{/* Timeline section */}
 				<div className="mx-auto -mt-8 max-w-7xl px-6 lg:px-8">
@@ -350,10 +366,13 @@ export default function Example() {
 								<p className="mt-1 text-base/7 text-gray-600 dark:text-gray-400">
 									{item.description}
 								</p>
-							</div>
+										<Footer />
+		</div>
 						))}
-					</div>
-				</div>
+								<Footer />
+		</div>
+							<Footer />
+		</div>
 
 				{/* Logo cloud */}
 				<div className="mx-auto mt-32 max-w-7xl sm:mt-40 sm:px-6 lg:px-8">
@@ -402,7 +421,8 @@ export default function Example() {
 								height={48}
 								className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
 							/>
-						</div>
+									<Footer />
+		</div>
 						<div
 							aria-hidden="true"
 							className="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl">
@@ -413,9 +433,12 @@ export default function Example() {
 								}}
 								className="aspect-1404/767 w-351 bg-linear-to-r from-[#80caff] to-[#4f46e5] opacity-25"
 							/>
-						</div>
-					</div>
-				</div>
+									<Footer />
+		</div>
+								<Footer />
+		</div>
+							<Footer />
+		</div>
 
 				{/* CTA section */}
 				<div className="mt-32 overflow-hidden sm:mt-40">
@@ -436,7 +459,8 @@ export default function Example() {
 									occaecat fugiat. Quasi aperiam sit non sit neque
 									reprehenderit.
 								</p>
-							</div>
+										<Footer />
+		</div>
 							<div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
 								<div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
 									<img
@@ -444,7 +468,8 @@ export default function Example() {
 										src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
 										className="aspect-7/5 w-148 max-w-none rounded-2xl bg-gray-50 object-cover max-sm:w-120 dark:bg-gray-800"
 									/>
-								</div>
+											<Footer />
+		</div>
 								<div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-148 lg:items-start lg:justify-end lg:gap-x-8">
 									<div className="order-first flex w-64 flex-none justify-end self-end max-sm:w-40 lg:w-auto">
 										<img
@@ -452,26 +477,34 @@ export default function Example() {
 											src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
 											className="aspect-4/3 w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover dark:bg-gray-800"
 										/>
-									</div>
+												<Footer />
+		</div>
 									<div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
 										<img
 											alt=""
 											src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
 											className="aspect-7/5 w-148 max-w-none flex-none rounded-2xl bg-gray-50 object-cover max-sm:w-120 dark:bg-gray-800"
 										/>
-									</div>
+												<Footer />
+		</div>
 									<div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
 										<img
 											alt=""
 											src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
 											className="aspect-4/3 w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover dark:bg-gray-800"
 										/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+												<Footer />
+		</div>
+											<Footer />
+		</div>
+										<Footer />
+		</div>
+									<Footer />
+		</div>
+								<Footer />
+		</div>
+							<Footer />
+		</div>
 
 				{/* Stats */}
 				<div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
@@ -484,7 +517,8 @@ export default function Example() {
 							euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus
 							sit eu in id. Integer vel nibh.
 						</p>
-					</div>
+								<Footer />
+		</div>
 					<div className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 lg:mx-0 lg:mt-20 lg:max-w-none lg:flex-row lg:items-end">
 						<div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-gray-50 p-8 sm:w-3/4 sm:max-w-md sm:flex-row-reverse sm:items-end lg:w-72 lg:max-w-none lg:flex-none lg:flex-col lg:items-start dark:bg-white/5 dark:inset-ring dark:inset-ring-white/10">
 							<p className="flex-none text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -497,8 +531,10 @@ export default function Example() {
 								<p className="mt-2 text-base/7 text-gray-600 dark:text-gray-300">
 									Vel labore deleniti veniam consequuntur sunt nobis.
 								</p>
-							</div>
-						</div>
+										<Footer />
+		</div>
+									<Footer />
+		</div>
 						<div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-gray-900 p-8 sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-sm lg:flex-auto lg:flex-col lg:items-start lg:gap-y-44 dark:bg-gray-700 dark:inset-ring dark:inset-ring-white/10">
 							<p className="flex-none text-3xl font-bold tracking-tight text-white">
 								$8.9 billion
@@ -511,8 +547,10 @@ export default function Example() {
 								<p className="mt-2 text-base/7 text-gray-400 dark:text-gray-300">
 									Eu duis porta aliquam ornare. Elementum eget magna egestas.
 								</p>
-							</div>
-						</div>
+										<Footer />
+		</div>
+									<Footer />
+		</div>
 						<div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-blue-900 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28 dark:inset-ring dark:inset-ring-white/10">
 							<p className="flex-none text-3xl font-bold tracking-tight text-white">
 								401,093
@@ -525,10 +563,14 @@ export default function Example() {
 									Eu duis porta aliquam ornare. Elementum eget magna egestas. Eu
 									duis porta aliquam ornare.
 								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+										<Footer />
+		</div>
+									<Footer />
+		</div>
+								<Footer />
+		</div>
+							<Footer />
+		</div>
 
 				{/* Blog section */}
 				<div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
@@ -547,7 +589,8 @@ export default function Example() {
 								src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1344&h=1104&q=80"
 								className="mt-16 aspect-6/5 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5 lg:aspect-auto lg:h-138 dark:outline-white/10"
 							/>
-						</div>
+									<Footer />
+		</div>
 						<div className="w-full lg:max-w-xl lg:flex-auto">
 							<h3 className="sr-only">Job openings</h3>
 							<ul className="-my-8 divide-y divide-gray-100 dark:divide-gray-800">
@@ -598,10 +641,14 @@ export default function Example() {
 									className="text-sm/6 font-semibold text-blue-900 hover:text-blue-800 dark:text-blue-700 dark:hover:text-blue-600">
 									View all openings <span aria-hidden="true">&rarr;</span>
 								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+										<Footer />
+		</div>
+									<Footer />
+		</div>
+								<Footer />
+		</div>
+							<Footer />
+		</div>
 			</main>
 
 			{/* Footer */}
@@ -627,7 +674,8 @@ export default function Example() {
 											</li>
 										))}
 									</ul>
-								</div>
+											<Footer />
+		</div>
 								<div className="mt-10 md:mt-0">
 									<h3 className="text-sm/6 font-semibold text-gray-900 dark:text-white">
 										Support
@@ -645,8 +693,10 @@ export default function Example() {
 											</li>
 										))}
 									</ul>
-								</div>
-							</div>
+											<Footer />
+		</div>
+										<Footer />
+		</div>
 							<div className="md:grid md:grid-cols-2 md:gap-8">
 								<div>
 									<h3 className="text-sm/6 font-semibold text-gray-900 dark:text-white">
@@ -665,7 +715,8 @@ export default function Example() {
 											</li>
 										))}
 									</ul>
-								</div>
+											<Footer />
+		</div>
 								<div className="mt-10 md:mt-0">
 									<h3 className="text-sm/6 font-semibold text-gray-900 dark:text-white">
 										Legal
@@ -683,9 +734,12 @@ export default function Example() {
 											</li>
 										))}
 									</ul>
-								</div>
-							</div>
-						</div>
+											<Footer />
+		</div>
+										<Footer />
+		</div>
+									<Footer />
+		</div>
 						<div className="mt-10 xl:mt-0">
 							<h3 className="text-sm/6 font-semibold text-gray-900 dark:text-white">
 								Subscribe to our newsletter
@@ -715,10 +769,13 @@ export default function Example() {
 										className="flex w-full items-center justify-center rounded-md bg-blue-900 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-blue-800 dark:hover:bg-blue-700 dark:focus-visible:outline-blue-800">
 										Subscribe
 									</button>
-								</div>
+											<Footer />
+		</div>
 							</form>
-						</div>
-					</div>
+									<Footer />
+		</div>
+								<Footer />
+		</div>
 					<div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24 dark:border-white/10">
 						<div className="flex gap-x-6 md:order-2">
 							{footerNavigation.social.map((item) => (
@@ -733,13 +790,17 @@ export default function Example() {
 									/>
 								</a>
 							))}
-						</div>
+									<Footer />
+		</div>
 						<p className="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0 dark:text-gray-400">
 							&copy; 2024 Your Company, Inc. All rights reserved.
 						</p>
-					</div>
-				</div>
+								<Footer />
+		</div>
+							<Footer />
+		</div>
 			</footer>
+					<Footer />
 		</div>
 	);
 }
