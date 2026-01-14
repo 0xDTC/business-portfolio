@@ -1,26 +1,62 @@
-import { InboxIcon, TrashIcon, UsersIcon } from "@heroicons/react/24/outline";
+import {
+	ShieldCheckIcon,
+	CodeBracketIcon,
+	CommandLineIcon,
+	ComputerDesktopIcon,
+	ServerIcon,
+} from "@heroicons/react/24/outline";
 
-const features = [
+const skillsCategories = [
 	{
-		name: "Unlimited inboxes",
-		description:
-			"Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.",
-		href: "#",
-		icon: InboxIcon,
+		name: "Technical",
+		icon: ShieldCheckIcon,
+		skills: [
+			"Security Assessment",
+			"Penetration Tester",
+			"API Testing",
+			"Network Testing",
+			"Threat Model",
+			"Cloud Security",
+			"AI/ML Security",
+		],
 	},
 	{
-		name: "Manage team members",
-		description:
-			"Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.",
-		href: "#",
-		icon: UsersIcon,
+		name: "Industrial",
+		icon: ServerIcon,
+		skills: [
+			"Team Work",
+			"Problem-Solving",
+			"Basic Forensics skills",
+			"Knowledge of Security Across Various Platform",
+		],
 	},
 	{
-		name: "Spam report",
-		description:
-			"Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.",
-		href: "#",
-		icon: TrashIcon,
+		name: "Tools (DAST, SAST, SCA)",
+		icon: CodeBracketIcon,
+		skills: [
+			"Metasploit",
+			"Burp Suite",
+			"Nmap",
+			"Nikto",
+			"Sqlmap",
+			"John the ripper",
+			"Checkmarx (SAST SCA)",
+			"OWASP",
+			"Tenable",
+			"Nessus",
+			"Postman",
+			"Invicti",
+		],
+	},
+	{
+		name: "Operating System",
+		icon: ComputerDesktopIcon,
+		skills: ["Linux", "Windows", "Mac"],
+	},
+	{
+		name: "Scripting Languages",
+		icon: CommandLineIcon,
+		skills: ["Bash", "Python", "Shell"],
 	},
 ];
 
@@ -30,41 +66,43 @@ export default function FeatureSection() {
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto max-w-2xl lg:mx-0">
 					<h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">
-						Stay on top of customer support
+						Skills
 					</h2>
 					<p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
-						Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-						voluptatum cupiditate veritatis in accusamus quisquam.
+						Comprehensive expertise in cybersecurity, penetration testing, and security
+						assessment across multiple platforms and tools.
 					</p>
 				</div>
 				<div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-					<dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-						{features.map((feature) => (
+					<div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3">
+						{skillsCategories.map((category) => (
 							<div
-								key={feature.name}
-								className="flex flex-col">
-								<dt className="text-base/7 font-semibold text-gray-900 dark:text-white">
-									<div className="mb-6 flex size-10 items-center justify-center rounded-lg bg-blue-900 dark:bg-blue-800">
-										<feature.icon
+								key={category.name}
+								className="rounded-lg border border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800">
+								<div className="mb-4 flex items-center gap-3">
+									<div className="flex size-10 items-center justify-center rounded-lg bg-blue-900 dark:bg-blue-800">
+										<category.icon
 											aria-hidden="true"
 											className="size-6 text-white"
 										/>
 									</div>
-									{feature.name}
-								</dt>
-								<dd className="mt-1 flex flex-auto flex-col text-base/7 text-gray-600 dark:text-gray-400">
-									<p className="flex-auto">{feature.description}</p>
-									<p className="mt-6">
-										<a
-											href={feature.href}
-											className="text-sm/6 font-semibold text-blue-900 hover:text-blue-800 dark:text-blue-700 dark:hover:text-blue-600">
-											Learn more <span aria-hidden="true">→</span>
-										</a>
-									</p>
-								</dd>
+									<h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+										{category.name}
+									</h3>
+								</div>
+								<ul className="space-y-2">
+									{category.skills.map((skill, index) => (
+										<li
+											key={index}
+											className="flex items-start text-sm text-gray-600 dark:text-gray-400">
+											<span className="mr-2 text-blue-900 dark:text-blue-700">•</span>
+											<span>{skill}</span>
+										</li>
+									))}
+								</ul>
 							</div>
 						))}
-					</dl>
+					</div>
 				</div>
 			</div>
 		</div>

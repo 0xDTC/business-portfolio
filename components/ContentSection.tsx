@@ -1,8 +1,11 @@
+"use client";
+
 import {
-	CloudArrowUpIcon,
-	LockClosedIcon,
-	ServerIcon,
+	ShieldCheckIcon,
+	CodeBracketIcon,
+	UserGroupIcon,
 } from "@heroicons/react/20/solid";
+import InteractiveTerminal from "./InteractiveTerminal";
 
 export default function ContentSection() {
 	return (
@@ -47,98 +50,91 @@ export default function ContentSection() {
 					<div className="lg:pr-4">
 						<div className="lg:max-w-lg">
 							<p className="text-base/7 font-semibold text-blue-900 dark:text-blue-700">
-								Deploy faster
+								Security Engineer
 							</p>
 							<h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">
-								A better workflow
+								About Me
 							</h1>
 							<p className="mt-6 text-xl/8 text-gray-700 dark:text-gray-300">
-								Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-								sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-								id at vitae feugiat egestas.
+								Security Engineer with 4 years of enterprise experience and 4 years of self-directed learning. 
+								Specialized in Web Security Assessment, API Testing, Network Testing, AWS Cloud Security, 
+								AI/LLM security, and Penetration Testing. Passionate about developing custom security tools 
+								and committed to continuous learning in collaborative environments.
 							</p>
 						</div>
 					</div>
 				</div>
 				<div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-					<img
-						alt=""
-						src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
-						className="w-3xl max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-228 dark:bg-gray-800 dark:ring-white/10"
-					/>
+					<InteractiveTerminal />
 				</div>
 				<div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
 					<div className="lg:pr-4">
 						<div className="max-w-xl text-base/7 text-gray-600 lg:max-w-lg dark:text-gray-400">
 							<p>
-								Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-								risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-								Id dolor praesent donec est. Odio penatibus risus viverra tellus
-								varius sit neque erat velit. Faucibus commodo massa rhoncus,
-								volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-								sed amet vitae sed turpis id.
+								Currently serving as a Security Engineer at Monotype Solutions, where I lead comprehensive 
+								security assessments and penetration testing initiatives across web applications, APIs, 
+								networks, and cloud infrastructure, including cutting-edge AI/LLM integrations.
 							</p>
 							<ul
 								role="list"
 								className="mt-8 space-y-8 text-gray-600 dark:text-gray-400">
 								<li className="flex gap-x-3">
-									<CloudArrowUpIcon
+									<ShieldCheckIcon
 										aria-hidden="true"
 										className="mt-1 size-5 flex-none text-blue-900 dark:text-blue-700"
 									/>
 									<span>
 										<strong className="font-semibold text-gray-900 dark:text-white">
-											Push to deploy.
+											Penetration Testing & Security Analysis.
 										</strong>{" "}
-										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-										Maiores impedit perferendis suscipit eaque, iste dolor
-										cupiditate blanditiis ratione.
+										Conducting thorough penetration tests on APIs, web applications, networks, and cloud 
+										infrastructure. Developing in-depth threat models to identify attack vectors and enable 
+										proactive defense strategies.
 									</span>
 								</li>
 								<li className="flex gap-x-3">
-									<LockClosedIcon
+									<UserGroupIcon
 										aria-hidden="true"
 										className="mt-1 size-5 flex-none text-blue-900 dark:text-blue-700"
 									/>
 									<span>
 										<strong className="font-semibold text-gray-900 dark:text-white">
-											SSL certificates.
+											Security Coordination & Collaboration.
 										</strong>{" "}
-										Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-										qui lorem cupidatat commodo.
+										Acting as security coordinator to streamline cross-team workflows, prioritize security 
+										findings, and facilitate threat modeling sessions. Crafting mitigation plans that ensure 
+										prompt vulnerability resolution within SLAs.
 									</span>
 								</li>
 								<li className="flex gap-x-3">
-									<ServerIcon
+									<CodeBracketIcon
 										aria-hidden="true"
 										className="mt-1 size-5 flex-none text-blue-900 dark:text-blue-700"
 									/>
 									<span>
 										<strong className="font-semibold text-gray-900 dark:text-white">
-											Database backups.
+											Vulnerability Management.
 										</strong>{" "}
-										Ac tincidunt sapien vehicula erat auctor pellentesque
-										rhoncus. Et magna sit morbi lobortis.
+										Leading vulnerability scans and assessments using automated tools for early detection 
+										and rapid remediation. Ensuring identified risks are prioritized and comprehensively 
+										addressed to minimize organizational risk exposure.
 									</span>
 								</li>
 							</ul>
 							<p className="mt-8">
-								Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-								odio id et. Id blandit molestie auctor fermentum dignissim.
-								Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-								et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-								et ut. Ac lorem vel integer orci.
+								Through strategic security initiatives, I've contributed to improving organizational security 
+								maturity and fostering a culture of proactive security awareness. My work has resulted in 
+								faster vulnerability response times, enhanced interdepartmental communication, and reduced 
+								attack surface areas across various digital assets.
 							</p>
 							<h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-								No server? No problem.
+								Impact & Achievements
 							</h2>
 							<p className="mt-6">
-								Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-								consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-								vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-								pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-								enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-								turpis ipsum eu a sed convallis diam.
+								Successfully implemented vulnerability management processes that have strengthened the 
+								organization's cybersecurity posture. By combining hands-on technical expertise with effective 
+								collaboration, I've helped build robust security frameworks that protect critical assets while 
+								maintaining operational efficiency.
 							</p>
 						</div>
 					</div>

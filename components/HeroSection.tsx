@@ -5,11 +5,10 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-	{ name: "Product", href: "#" },
-	{ name: "Features", href: "#" },
-	{ name: "Marketplace", href: "#" },
-	{ name: "Company", href: "#" },
-	{ name: "Log in", href: "#" },
+	{ name: "Episodes", href: "/episodes" },
+	{ name: "Content", href: "#" },
+	{ name: "Services", href: "#" },
+	{ name: "Contact", href: "#" },
 ];
 
 export default function HeroSection() {
