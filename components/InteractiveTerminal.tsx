@@ -81,17 +81,17 @@ export default function InteractiveTerminal() {
 	const inputRef = useRef<HTMLInputElement>(null);
 	const terminalRef = useRef<HTMLDivElement>(null);
 
-	useEffect(() => {
-		if (inputRef.current) {
-			inputRef.current.focus();
-		}
-	}, []);
+	// useEffect(() => {
+	// 	if (inputRef.current) {
+	// 		inputRef.current.focus();
+	// 	}
+	// }, []);
 
-	useEffect(() => {
-		if (terminalRef.current) {
-			terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
-		}
-	}, [history]);
+	// useEffect(() => {
+	// 	if (terminalRef.current) {
+	// 		terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+	// 	}
+	// }, [history]);
 
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
@@ -162,7 +162,8 @@ export default function InteractiveTerminal() {
 			{/* Terminal Body */}
 			<div
 				ref={terminalRef}
-				className="h-96 overflow-y-auto bg-gray-900 p-4 font-mono text-sm dark:bg-gray-950">
+				onClick={() => inputRef.current?.focus()}
+				className="h-96 overflow-y-auto bg-gray-900 p-4 font-mono text-sm dark:bg-gray-950 cursor-text">
 				{history.map((item, index) => {
 					if (item.type === "command") {
 						return (
@@ -211,7 +212,6 @@ export default function InteractiveTerminal() {
 						onKeyDown={handleKeyDown}
 						className="ml-2 flex-1 bg-transparent text-gray-100 outline-none focus:outline-none"
 						placeholder=""
-						autoFocus
 					/>
 				</form>
 			</div>

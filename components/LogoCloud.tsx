@@ -46,7 +46,7 @@ const platforms = [
 			<svg
 				viewBox="0 0 24 24"
 				fill="none"
-				className="w-10 h-10">
+				className="w-10 h-8">
 				{/* Isometric 3D Cube - Top face */}
 				<path
 					d="M6 8L14 4L22 8L14 12L6 8Z"
