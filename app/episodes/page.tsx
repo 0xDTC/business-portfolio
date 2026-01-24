@@ -4,13 +4,14 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import VerticalTimeline from "@/components/VerticalTimeline";
+import Header from "@/components/layout/Header";
 
 const navigation = [
 	{ name: "Home", href: "/" },
 	{ name: "Episodes", href: "/episodes" },
 	{ name: "Content", href: "#" },
 	{ name: "Services", href: "#" },
-	{ name: "Contact", href: "#" },
+	{ name: "Contact", href: "/contact" },
 ];
 
 export default function EpisodesPage() {
@@ -19,7 +20,7 @@ export default function EpisodesPage() {
 	return (
 		<div>
 			<header className="absolute inset-x-0 top-0 z-50">
-				<div className="mx-auto max-w-7xl">
+				{/* <div className="mx-auto max-w-7xl">
 					<div className="px-6 pt-6 lg:max-w-2xl lg:pr-0 lg:pl-8">
 						<nav
 							aria-label="Global"
@@ -61,7 +62,8 @@ export default function EpisodesPage() {
 							</div>
 						</nav>
 					</div>
-				</div>
+				</div> */}
+				<Header />
 				<Dialog
 					open={mobileMenuOpen}
 					onClose={setMobileMenuOpen}

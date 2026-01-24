@@ -1,4 +1,51 @@
+"use client";
+
+import { useState } from "react";
+
 export default function ContactSection() {
+	const [loading, setLoading] = useState(false);
+	const [submitted, setSubmitted] = useState(false);
+	const [error, setError] = useState("");
+
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		setLoading(true);
+		setError("");
+
+		const formData = new FormData(e.currentTarget);
+		const data = {
+			firstName: formData.get("first-name"),
+			lastName: formData.get("last-name"),
+			email: formData.get("email"),
+			company: formData.get("company"),
+			phone: formData.get("phone"),
+			message: formData.get("message"),
+			budget: formData.get("budget"),
+		};
+
+		try {
+			const response = await fetch("/api/contact", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(data),
+			});
+
+			if (!response.ok) {
+				throw new Error("Failed to send message");
+			}
+
+			setSubmitted(true);
+			e.currentTarget.reset();
+			setTimeout(() => setSubmitted(false), 5000);
+		} catch (err) {
+			setError(err instanceof Error ? err.message : "Something went wrong");
+		} finally {
+			setLoading(false);
+		}
+	};
+
 	return (
 		<div className="relative bg-white dark:bg-gray-900">
 			<div className="lg:absolute lg:inset-0 lg:left-1/2">
@@ -18,9 +65,22 @@ export default function ContactSection() {
 							Proin volutpat consequat porttitor cras nullam gravida at orci
 							molestie a eu arcu sed ut tincidunt magna.
 						</p>
+						{submitted && (
+							<div className="mt-4 rounded-md bg-green-50 p-4 dark:bg-green-900/20">
+								<p className="text-sm font-medium text-green-800 dark:text-green-200">
+									✓ Message sent successfully! We'll get back to you soon.
+								</p>
+							</div>
+						)}
+						{error && (
+							<div className="mt-4 rounded-md bg-red-50 p-4 dark:bg-red-900/20">
+								<p className="text-sm font-medium text-red-800 dark:text-red-200">
+									✗ {error}
+								</p>
+							</div>
+						)}
 						<form
-							action="#"
-							method="POST"
+							onSubmit={handleSubmit}
 							className="mt-16">
 							<div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
 								<div>
@@ -187,8 +247,9 @@ export default function ContactSection() {
 							<div className="mt-10 flex justify-end border-t border-gray-900/10 pt-8 dark:border-white/10">
 								<button
 									type="submit"
-									className="rounded-md bg-blue-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-blue-800 dark:hover:bg-blue-700 dark:focus-visible:outline-blue-800">
-									Send message
+									disabled={loading}
+									className="rounded-md bg-blue-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 disabled:opacity-50 disabled:cursor-not-allowed dark:bg-blue-800 dark:hover:bg-blue-700 dark:focus-visible:outline-blue-800">
+									{loading ? "Sending..." : "Send message"}
 								</button>
 							</div>
 						</form>

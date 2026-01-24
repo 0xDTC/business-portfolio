@@ -8,7 +8,7 @@ const navigation = [
 	{ name: "Episodes", href: "/episodes" },
 	{ name: "Content", href: "#" },
 	{ name: "Services", href: "#" },
-	{ name: "Contact", href: "#" },
+	{ name: "Contact", href: "/contact" },
 ];
 
 export default function HeroSection() {
